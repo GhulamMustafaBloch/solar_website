@@ -49,7 +49,7 @@
   align-items: center;
 }
 
-.nav-links li {
+.nav-links {
   list-style: none;
 }
 
@@ -67,47 +67,38 @@
 }
 
 .banner-content {
-  width: 59.1875rem;
+  max-width: 59.1875rem;
   text-align: center;
 }
 
 .banner-content h1 {
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 700;
   font-size: 4rem;
-  line-height: 87.52%;
   color: #ffffff;
 }
 
 .banner-content p {
   padding-top: 0.625rem;
   margin: auto;
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 141.02%;
   color: #ffffff;
 }
 
 .Chi-Siamo-main-container {
-  padding: 0 10.3125rem;
+  padding: 5rem 10.3125rem 0 10.3125rem;
 }
 
 .Chi-Siamo-main-container h2 {
   text-align: center;
 }
-
 .Chi-Siamo-main-container p {
   text-align: center;
 }
-
 .Chi-Siamo-main-container .Chi-Siamo-container .border {
   width: 7.4638rem;
   height: 0.3125rem;
   margin: 1.25rem auto;
   background-color: #86be3f;
   border-radius: 0.625rem;
-  border: 0.1875rem solid #86be3f;
 }/*# sourceMappingURL=style.css.map */
