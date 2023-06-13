@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.first_header{
+    border-bottom: 1px solid gray;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.first_header .logo{
+    width: 80px;
+    height: 40px;
+}
+.first_header{
+    justify-content: space-between;
+    padding-left: 165px;
+    padding-right: 165px;
+    height: 80px;
+    align-items: center;
+}
+.email, .num, .header_content_and_btn{
+    align-items: center;
+    gap: 50px;
+}
+.email, .num{
+    gap: 40px;
+    margin-top: 14px;
+}
+.email p i, .num p i{
+    color: #86BE3F;
+}
+.header_content_and_btn button{
+    background: #86BE3F;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.nav_links{
+    padding: 0 165px;
+    gap: 60px;
+    height: 80px;
+    align-items: center;
+}
+.nav_links li{
+    list-style: none;
+}
+.nav_links li a{
+    text-decoration: none;
+    color: #000;
+}
