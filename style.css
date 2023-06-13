@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-.first_header {
+.header {
+  display: flex;
   border-bottom: 1px solid gray;
 }
 
@@ -9,12 +10,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-.first_header .logo {
+.header .logo img {
   width: 80px;
   height: 40px;
 }
 
-.first_header {
+.header {
   justify-content: space-between;
   padding-left: 165px;
   padding-right: 165px;
@@ -22,31 +23,37 @@
   align-items: center;
 }
 
-.email, .num, .header_content_and_btn {
+.header_content_and_btn {
   align-items: center;
   gap: 50px;
 }
 
 .email, .num {
+  display: flex;
   gap: 40px;
   margin-top: 14px;
+  align-items: center;
 }
 
 .email p i, .num p i {
-  color: #86BE3F;
+  color: #86be3f;
+}
+
+.num p i {
+  color: #86be3f;
 }
 
 .header_content_and_btn button {
-  background: #86BE3F;
+  background: #86be3f;
   border: none;
   padding: 7px 15px;
   border-radius: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .nav_links {
   padding: 0 165px;
-  gap: 60px;
+  gap: 55px;
   height: 80px;
   align-items: center;
 }
@@ -58,4 +65,58 @@
 .nav_links li a {
   text-decoration: none;
   color: #000;
+}
+
+.accesso_al_sole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-image: url("./rfFFHQS_ierpaCssBtGpe7zdHFWLzKEVCmc6ld_moPW85TCFIYo5Al397rZgJG6GaOOsUfYeIDlwEmkIijkNbOcAHdgiH717II4QSf8g+5LU+jTs3Q4NHuue61qkMHXSWe1q0YfmodBvSfcuYFRZzjKFDBdbP+bI19SDUXmCn1O4zMcCxIWZGjxVw2_Lfx8Cg+funZlLSOf4oF.png");
+}
+
+.accesso_al_sole_content {
+  width: 947px;
+  text-align: center;
+}
+
+.accesso_al_sole_content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87.52%;
+  color: #ffffff;
+}
+
+.accesso_al_sole_content p {
+  padding-top: 10px;
+  margin: auto;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 141.02%;
+  color: #ffffff;
+}
+
+.Chi_Siamo_main_container {
+  padding: 0 165px;
+}
+
+.Chi_Siamo_main_container h2 {
+  text-align: center;
+}
+
+.Chi_Siamo_main_container p {
+  text-align: center;
+}
+
+.Chi_Siamo_main_container .Chi_Siamo_container .border {
+  width: 119.42px;
+  height: 5px;
+  margin: 20px auto;
+  background-color: #86be3f;
+  border-radius: 10px;
+  border: 3px solid #86be3f;
 }/*# sourceMappingURL=style.css.map */
