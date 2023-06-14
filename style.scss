@@ -2,7 +2,7 @@
 @import "variable";
 .header {
     display: flex;
-    border-bottom: 0.0625rem solid gray;
+    border-bottom: 0.0625rem solid $boderColor;
 }
 * {
     margin: 0;
@@ -40,6 +40,9 @@
         border: none;
         color: $whiteColor;
     }
+    button:hover {
+        opacity: 0.6;
+    }
 }
 .nav-links {
     display: flex;
@@ -47,9 +50,7 @@
     gap: 3.4375rem;
     height: 5rem;
     align-items: center;
-}
-.nav-links {
-        list-style: none;
+    list-style: none;
 }
 .nav-links {
     li {
@@ -72,7 +73,7 @@
 }
 .banner-content {
     h1 {
-        font-weight: 700;
+        font-weight: $bold;
         font-size: 4rem;
         color: $whiteColor;
     }
@@ -81,29 +82,43 @@
     p {
         padding-top: 0.625rem;
         margin: auto;
-        font-weight: 500;
+        font-weight: $medium;
         font-size: 1.5rem;
         color: $whiteColor;
     }
 }
 .Chi-Siamo-main-container {
-    padding: 5rem 10.3125rem 0 10.3125rem;
+    // padding: 5rem 10.3125rem 0 10.3125rem;
+    margin: auto;
+    text-align: center;
 }
 .Chi-Siamo-main-container {
-    h2 {
-        text-align: center;
-    }
     p {
-        text-align: center;
+        max-width: 63.375rem;
+        margin:2.8125rem auto;
     }
     .Chi-Siamo-container {
-        .border {
-            width: 7.4638rem;
-            height: 0.3125rem;
-            margin: 1.25rem auto;
-            background-color: $bgColor;
-            border-radius: 0.625rem;
+        margin-top: 3rem;
+        position: relative;
+        h2::before{
+            content: "";
+            position: absolute;
+            width: 8.25rem;
+            height: 0.1875rem;
+            background: $bgColor;
+            top: 3.75rem;
+            left: 34.5rem;
         }
     }
+}
+
+.Chi-Siamo-container::after{
+    content: "";
+    width: 5.1294rem;
+    height: 5.9588rem;
+    left: 1.4375rem;
+    position: absolute;
+    background-image: url(Group\ 427324279.svg);
+    top: 1.0625rem;
 }
 

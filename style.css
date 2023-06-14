@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .header {
   display: flex;
-  border-bottom: 0.0625rem solid gray;
+  border-bottom: 0.0625rem solid #F3EDED;
 }
 
 * {
@@ -40,6 +40,9 @@
   border: none;
   color: #ffffff;
 }
+.header-content-and-btn button:hover {
+  opacity: 0.6;
+}
 
 .nav-links {
   display: flex;
@@ -47,9 +50,6 @@
   gap: 3.4375rem;
   height: 5rem;
   align-items: center;
-}
-
-.nav-links {
   list-style: none;
 }
 
@@ -86,19 +86,34 @@
 }
 
 .Chi-Siamo-main-container {
-  padding: 5rem 10.3125rem 0 10.3125rem;
+  margin: auto;
+  text-align: center;
 }
 
-.Chi-Siamo-main-container h2 {
-  text-align: center;
-}
 .Chi-Siamo-main-container p {
-  text-align: center;
+  max-width: 63.375rem;
+  margin: 2.8125rem auto;
 }
-.Chi-Siamo-main-container .Chi-Siamo-container .border {
-  width: 7.4638rem;
-  height: 0.3125rem;
-  margin: 1.25rem auto;
-  background-color: #86be3f;
-  border-radius: 0.625rem;
+.Chi-Siamo-main-container .Chi-Siamo-container {
+  margin-top: 3rem;
+  position: relative;
+}
+.Chi-Siamo-main-container .Chi-Siamo-container h2::before {
+  content: "";
+  position: absolute;
+  width: 8.25rem;
+  height: 0.1875rem;
+  background: #86be3f;
+  top: 3.75rem;
+  left: 34.5rem;
+}
+
+.Chi-Siamo-container::after {
+  content: "";
+  width: 5.1294rem;
+  height: 5.9588rem;
+  left: 1.4375rem;
+  position: absolute;
+  background-image: url(Group\ 427324279.svg);
+  top: 1.0625rem;
 }/*# sourceMappingURL=style.css.map */
