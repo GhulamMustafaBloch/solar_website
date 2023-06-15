@@ -275,11 +275,10 @@
 .Connesso-Intelligente-container {
   background-image: url(./pattern-8\ 2.png);
   margin-top: 12.5rem;
-  padding: 0 6.25rem;
+  padding: 4rem 6.25rem;
 }
 .Connesso-Intelligente-container h2 {
   text-align: center;
-  padding-top: 50px;
   position: relative;
 }
 .Connesso-Intelligente-container h2::before {
