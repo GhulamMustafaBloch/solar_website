@@ -329,11 +329,31 @@
   background: #ffffff;
 }
 .Perchè-container .row .col-sm-4 .card {
-  min-height: 27.2819rem;
+  min-height: 23.2819rem;
 }
 .Perchè-container .row .col-sm-4 .card .card-img-top {
   margin-top: 3.125rem;
 }
 .Perchè-container .row .col-sm-4 .card .card-body {
   margin-top: 1.25rem;
+}
+.Perchè-container .row .col-sm-4 .card .card-body .card-title {
+  font-size: 14px;
+}
+.Perchè-container .row .col-sm-4 .card .card-body .card-text {
+  font-size: 10px;
+}
+
+.bonus {
+  background: #F9F9F9;
+  padding: 3.125rem 6.25rem;
+}
+.bonus .col-sm-3 .card {
+  text-align: center;
+}
+.bonus .col-sm-3 .card .card-img-top {
+  margin-top: 20px;
+}
+.bonus .col-sm-3 .card .card-text {
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -328,13 +328,35 @@
         .col-sm-4{
             background: $whiteColor;
             .card{
-                min-height: 27.2819rem;
+                min-height: 23.2819rem;
                 .card-img-top{
                     margin-top: 3.125rem;
                 }
                 .card-body{
                     margin-top: 1.25rem;
+                    .card-title{
+                        font-size: 14px;
+                    }
+                    .card-text{
+                        font-size: 10px;
+                    }
                 }
+            }
+        }
+    }
+}
+.bonus{
+    background: $bgprimaryColor;
+    padding: 3.125rem 6.25rem;
+    .col-sm-3{
+        .card{
+            text-align: center;
+            .card-img-top{
+                margin-top: 20px;
+            }
+                .card-text{
+                    font-size: 10px;
+                
             }
         }
     }
