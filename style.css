@@ -463,14 +463,14 @@
 }
 .Connettiti > h5 {
   text-align: center;
-  padding: 53px 0;
+  padding: 3.3125rem 0;
   position: relative;
 }
 .Connettiti > h5::before {
   position: absolute;
   content: "";
-  width: 100px;
-  height: 3px;
+  width: 6.25rem;
+  height: 0.1875rem;
   background: #86be3f;
   bottom: 40px;
   left: 48%;
@@ -483,18 +483,18 @@
 }
 .Connettiti > div > div {
   text-align: center;
-  width: 277px;
-  border: 2px solid #86be3f;
+  width: 17.3125rem;
+  border: 0.125rem solid #86be3f;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
+  min-height: 18.75rem;
 }
 .Connettiti > div > div .card {
   margin: 0;
-  width: 250px;
-  min-height: 285px;
+  width: 15.625rem;
+  min-height: 17.8125rem;
   background-color: #ffffff;
   padding-top: 31px;
 }/*# sourceMappingURL=style.css.map */
