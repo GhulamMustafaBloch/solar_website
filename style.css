@@ -215,7 +215,7 @@
   position: absolute;
   content: "";
   width: 6.25rem;
-  height: 2px;
+  height: 0.125rem;
   background: #86be3f;
   left: 0;
   bottom: 163px;
@@ -255,9 +255,9 @@
 .Smart-Integrated-container .Smart-Integrated-img::before {
   position: absolute;
   content: "";
-  width: 410px;
-  height: 410px;
-  border: 40px solid #F8F8F8;
+  width: 25.625rem;
+  height: 25.625rem;
+  border: 2.5rem solid #F8F8F8;
   border-radius: 50%;
   z-index: -1;
   left: 164px;
@@ -286,35 +286,35 @@
 .Connesso-Intelligente-container h2::before {
   position: absolute;
   content: "";
-  width: 120px;
-  height: 3.6px;
+  width: 7.5rem;
+  height: 0.225rem;
   background: #86be3f;
   position: absolute;
   bottom: -27px;
-  left: 41%;
+  left: 45%;
 }
-.Connesso-Intelligente-container .Connesso-Intelligente-main-cards {
+.Connesso-Intelligente-container .listing-wrapper {
   margin-top: 5rem;
   display: flex;
   gap: 2.5rem;
 }
-.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-listing {
+.Connesso-Intelligente-container .listing-wrapper .list-item {
   margin-top: 1.25rem;
   display: flex;
   gap: 0.8125rem;
 }
-.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-listing .Connesso-Intelligente-listing-img {
+.Connesso-Intelligente-container .listing-wrapper .list-item .icon {
   position: relative;
 }
-.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-listing .Connesso-Intelligente-listing-img .Versatile-img {
+.Connesso-Intelligente-container .listing-wrapper .list-item .icon .Versatile-img {
   position: absolute;
   top: 11px;
   left: 8px;
 }
-.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-listing .Connesso-Intelligente-listing-content h3 {
+.Connesso-Intelligente-container .listing-wrapper .list-item .list-item-content h3 {
   font-size: 1.125rem;
 }
-.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-listing .Connesso-Intelligente-listing-content p {
+.Connesso-Intelligente-container .listing-wrapper .list-item .list-item-content p {
   font-size: 1rem;
 }
 
@@ -369,52 +369,55 @@
   text-align: center;
 }
 .bonus .row-cols-md-4 .col .card .card-img-top {
-  padding-top: 2.1875rem;
+  padding-top: 1.4375rem;
 }
 .bonus .row-cols-md-4 .col .card .card-body {
   padding-top: 0.9375rem;
 }
 
 .listing-card {
-  margin: 3.125rem 0;
   width: auto;
 }
-.listing-card .row-cols-md-2 {
+.listing-card .card-title {
+  text-align: center;
+  padding: 5rem 0;
+}
+.listing-card > div {
   margin: 0;
   justify-content: center;
 }
-.listing-card .row-cols-md-2 .col {
+.listing-card > div .col {
   max-width: 43%;
 }
-.listing-card .row-cols-md-2 .col .card {
+.listing-card > div .col .card {
   min-height: 67.5rem;
   background: #ffffff;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
   border: none;
 }
-.listing-card .row-cols-md-2 .col .card .card-img-top img {
+.listing-card > div .col .card .card-img-top img {
   width: 100%;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .card-title {
+.listing-card > div .col .card .card-body .card-title {
   color: #86be3f;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .card-listing-item {
+.listing-card > div .col .card .card-body .card-listing-item {
   display: flex;
   gap: 0.4375rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .card-listing-item p {
+.listing-card > div .col .card .card-body .card-listing-item p {
   font-size: 0.875rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .card-title {
+.listing-card > div .col .card .card-body .CONSIGLIATO .card-title {
   color: #363636;
   font-size: 1.125rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families {
+.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families {
   margin-top: 1.25rem;
   display: flex;
   gap: 3.125rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices .devices-and-families-img, .listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families .devices-and-families-img {
+.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices .devices-and-families-img, .listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families .devices-and-families-img {
   width: 3.875rem;
   height: 3.875rem;
   border-radius: 3.875rem;
@@ -423,22 +426,22 @@
   justify-content: center;
   align-items: center;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices p, .listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families p {
+.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices p, .listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families p {
   margin-top: 0.625rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .card-title {
-  font-size: 16px;
+.listing-card > div .col .card .card-body .Scopri-listing .card-title {
+  font-size: 1rem;
   color: #363636;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .list-items {
-  padding: 30px;
+.listing-card > div .col .card .card-body .Scopri-listing .list-items {
+  padding: 1.875rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .list-items li {
+.listing-card > div .col .card .card-body .Scopri-listing .list-items li {
   color: #666666;
-  font-size: 14px;
-  padding-top: 18px;
+  font-size: 0.875rem;
+  padding-top: 1.125rem;
 }
-.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .list-items li::marker {
+.listing-card > div .col .card .card-body .Scopri-listing .list-items li::marker {
   color: #86be3f;
-  font-size: 20px;
+  font-size: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

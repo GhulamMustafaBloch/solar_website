@@ -209,7 +209,7 @@
                 position: absolute;
                 content: "";
                 width: 6.25rem;
-                height: 2px;
+                height: 0.125rem;
                 background: $bgColor;
                 left: 0;
                 bottom: 163px;
@@ -253,9 +253,9 @@
         &::before{
             position: absolute;
             content: "";
-            width: 410px;
-            height: 410px;
-            border: 40px solid $borderPrimaryColor;
+            width: 25.625rem;
+            height: 25.625rem;
+            border: 2.5rem solid $borderPrimaryColor;
             border-radius: 50%;
             z-index: -1;
             left: 164px;
@@ -283,23 +283,23 @@
         &::before{
             position: absolute;
             content: "";
-            width: 120px;
-            height: 3.6px;
+            width: 7.5rem;
+            height: 0.225rem;
             background: $bgColor;
             position: absolute;
             bottom: -27px;
-            left: 41%;
+            left: 45%;
         }
     }
-    .Connesso-Intelligente-main-cards{
+    .listing-wrapper{
         margin-top: 5rem;
         display: flex;
         gap: 2.5rem;
-        .Connesso-Intelligente-listing{
+        .list-item{
             margin-top: 1.25rem;
             display: flex;
             gap: 0.8125rem;
-            .Connesso-Intelligente-listing-img{
+            .icon{
                 position: relative;
                 .Versatile-img{
                     position: absolute;
@@ -307,7 +307,7 @@
                     left: 8px;
                 }
             }
-            .Connesso-Intelligente-listing-content{
+            .list-item-content{
                 h3{
                     font-size: 1.125rem;
                 }
@@ -364,7 +364,7 @@
             .card{
                 text-align: center;
                 .card-img-top{
-                    padding-top: 2.1875rem;
+                    padding-top: 1.4375rem;
                 }
                 .card-body{
                     padding-top: 0.9375rem;
@@ -374,9 +374,13 @@
     }
 }
 .listing-card{
-    margin: 3.125rem 0;
+    // margin: 3.125rem 0;
     width: auto;
-    .row-cols-md-2{
+    .card-title{
+        text-align: center;
+        padding: 5rem 0;
+    }
+    & > div{
         margin: 0;
         justify-content: center;
         .col{
@@ -429,18 +433,18 @@
                     }
                     .Scopri-listing{
                         .card-title{
-                            font-size: 16px;
+                            font-size: 1rem;
                             color: $primaryColor;
                         }
                         .list-items{
-                            padding: 30px;
+                            padding: 1.875rem;
                             li{
                                 color: $secondaryColor;
-                                font-size: 14px;
-                                padding-top: 18px;
+                                font-size: 0.875rem;
+                                padding-top: 1.125rem;
                                 &::marker{
                                     color: $bgColor;
-                                    font-size: 20px;
+                                    font-size: 1.25rem;
                                 }
                             }
                         }
