@@ -13,8 +13,8 @@
 
 .header {
   justify-content: space-between;
-  padding-left: 10.3125rem;
-  padding-right: 10.3125rem;
+  padding-left: 8.3125rem;
+  padding-right: 5.3125rem;
   height: 5rem;
   align-items: center;
 }
@@ -25,12 +25,12 @@
 .header .header-content-and-btn {
   display: flex;
   align-items: center;
-  gap: 3.125rem;
+  gap: 2.125rem;
 }
 .header .header-content-and-btn .info {
   display: flex;
   align-items: center;
-  gap: 1.875rem;
+  gap: 1.25rem;
 }
 .header .header-content-and-btn button {
   background: #86be3f;
@@ -174,7 +174,7 @@
   background: #86be3f;
   width: 0.875rem;
   height: 0.0437rem;
-  top: 898px;
+  top: 906px;
   left: 475px;
 }
 .Chi-Siamo-main-container .Cristian::after {
@@ -183,7 +183,7 @@
   background: #86be3f;
   width: 0.875rem;
   height: 0.0437rem;
-  top: 898px;
+  top: 906px;
   right: 475px;
 }
 
@@ -270,4 +270,48 @@
   top: -18px;
   z-index: -1;
   left: 72px;
+}
+
+.Connesso-Intelligente-container {
+  background-image: url(./pattern-8\ 2.png);
+  margin-top: 12.5rem;
+  padding: 4rem 6.25rem;
+}
+.Connesso-Intelligente-container h2 {
+  text-align: center;
+  position: relative;
+}
+.Connesso-Intelligente-container h2::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 3.6px;
+  background: #86be3f;
+  position: absolute;
+  bottom: -27px;
+  left: 404px;
+}
+.Connesso-Intelligente-container .Connesso-Intelligente-main-cards {
+  margin-top: 5rem;
+  display: flex;
+  gap: 2.5rem;
+}
+.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-card {
+  margin-top: 20px;
+  display: flex;
+  gap: 0.8125rem;
+}
+.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-card .Connesso-Intelligente-card-img {
+  position: relative;
+}
+.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-card .Connesso-Intelligente-card-img .Versatile-img {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+}
+.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-card .Connesso-Intelligente-card-content h3 {
+  font-size: 18px;
+}
+.Connesso-Intelligente-container .Connesso-Intelligente-main-cards .Connesso-Intelligente-card .Connesso-Intelligente-card-content p {
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
