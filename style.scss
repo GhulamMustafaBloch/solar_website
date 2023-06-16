@@ -374,11 +374,21 @@
     }
 }
 .listing-card{
-    // margin: 3.125rem 0;
     width: auto;
-    .card-title{
-        text-align: center;
-        padding: 5rem 0;
+    & > h5{
+        position: relative;
+        margin: 5rem 0;
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 6.25rem;
+            height: 0.1875rem;
+            background: $bgColor;
+            top: 40px;
+        }
     }
     & > div{
         margin: 0;
@@ -386,7 +396,7 @@
         .col{
             max-width: 43%;
             .card{
-                min-height: 67.5rem;
+                min-height: 68.5rem;
                 background: $whiteColor;
                 box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
                 border: none;
@@ -450,6 +460,50 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.Connettiti{
+    background: $cardTertiaryColor;
+    margin-top: 4rem;
+    & >h5{
+        // display: inline;
+        // display: flex;
+        // justify-content: center;
+        text-align: center;
+        padding: 53px 0;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 3px;
+            background: $bgColor;
+            bottom: 40px;
+            left: 48%;
+        }
+    }
+    & >div{
+        justify-content: center;
+        margin: 0;
+        --bs-gutter-x: 0.7rem;
+        gap: 20px;
+        & > div{
+            text-align: center;
+            width: 277px;
+            border: 2px solid $bgColor;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            .card{
+                margin: 0;
+                width: 250px;
+                min-height: 285px;
+                background-color: $whiteColor;
+                padding-top: 31px;
             }
         }
     }
