@@ -373,3 +373,80 @@
         }
     }
 }
+.listing-card{
+    margin: 3.125rem 0;
+    width: auto;
+    .row-cols-md-2{
+        margin: 0;
+        justify-content: center;
+        .col{
+            max-width: 43%;
+            .card{
+                min-height: 67.5rem;
+                background: $whiteColor;
+                box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+                border: none;
+                .card-img-top{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .card-body{
+                    .card-title{
+                        color: $bgColor;
+                    }
+                    .card-listing-item{
+                        display: flex;
+                        gap: 0.4375rem;
+                        p{
+                            font-size: 0.875rem;
+                        }
+                    }
+                    .CONSIGLIATO{
+                        .card-title{
+                            color: $primaryColor;
+                            font-size: 1.125rem;
+                        }
+                        .CONSIGLIATO-devices-and-families{
+                            margin-top: 1.25rem;
+                            display: flex;
+                            gap: 3.125rem;
+                            .devices, .families{
+                                .devices-and-families-img{
+                                    width: 3.875rem;
+                                    height: 3.875rem;
+                                    border-radius: 3.875rem;
+                                    background: $tertiaryColor;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                p{
+                                    margin-top: 0.625rem;
+                                }
+                            }
+                        }
+                    }
+                    .Scopri-listing{
+                        .card-title{
+                            font-size: 16px;
+                            color: $primaryColor;
+                        }
+                        .list-items{
+                            padding: 30px;
+                            li{
+                                color: $secondaryColor;
+                                font-size: 14px;
+                                padding-top: 18px;
+                                &::marker{
+                                    color: $bgColor;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

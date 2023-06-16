@@ -373,4 +373,72 @@
 }
 .bonus .row-cols-md-4 .col .card .card-body {
   padding-top: 0.9375rem;
+}
+
+.listing-card {
+  margin: 3.125rem 0;
+  width: auto;
+}
+.listing-card .row-cols-md-2 {
+  margin: 0;
+  justify-content: center;
+}
+.listing-card .row-cols-md-2 .col {
+  max-width: 43%;
+}
+.listing-card .row-cols-md-2 .col .card {
+  min-height: 67.5rem;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.listing-card .row-cols-md-2 .col .card .card-img-top img {
+  width: 100%;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .card-title {
+  color: #86be3f;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .card-listing-item {
+  display: flex;
+  gap: 0.4375rem;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .card-listing-item p {
+  font-size: 0.875rem;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .card-title {
+  color: #363636;
+  font-size: 1.125rem;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 3.125rem;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices .devices-and-families-img, .listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families .devices-and-families-img {
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: 3.875rem;
+  background: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices p, .listing-card .row-cols-md-2 .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families p {
+  margin-top: 0.625rem;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .card-title {
+  font-size: 16px;
+  color: #363636;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .list-items {
+  padding: 30px;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .list-items li {
+  color: #666666;
+  font-size: 14px;
+  padding-top: 18px;
+}
+.listing-card .row-cols-md-2 .col .card .card-body .Scopri-listing .list-items li::marker {
+  color: #86be3f;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
