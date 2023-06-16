@@ -274,7 +274,7 @@
     }
 }
 .Connesso-Intelligente-container{
-    background-image: url(./pattern-8\ 2.png);
+    background-image: url(./Intelligente.png);
     margin-top: 12.5rem;
     padding: 4rem 6.25rem;
     h2{
@@ -288,7 +288,7 @@
             background: $bgColor;
             position: absolute;
             bottom: -27px;
-            left: 404px;
+            left: 41%;
         }
     }
     .Connesso-Intelligente-main-cards{
@@ -296,7 +296,7 @@
         display: flex;
         gap: 2.5rem;
         .Connesso-Intelligente-listing{
-            margin-top: 20px;
+            margin-top: 1.25rem;
             display: flex;
             gap: 0.8125rem;
             .Connesso-Intelligente-listing-img{
@@ -309,25 +309,32 @@
             }
             .Connesso-Intelligente-listing-content{
                 h3{
-                    font-size: 18px;
+                    font-size: 1.125rem;
                 }
                 p{
-                    font-size: 16px;
+                    font-size: 1rem;
                 }
             }
         }
     }
 }
 .Perchè-container{
+    max-width: 99%;
     h3{
+        padding-top: 1.25rem;
         text-align: center;
     }
     .row{
-        padding:3.125rem 6.25rem;
+        padding-top: 1.875rem;
+        justify-content: center;
         text-align: center;
         .col-sm-4{
-            background: $whiteColor;
+            width: 21rem;
+            border: none;
             .card{
+                border: none;
+                background: $whiteColor;
+                box-shadow: 0rem 0rem 0.875rem rgba(0, 0, 0, 0.1);
                 min-height: 23.2819rem;
                 .card-img-top{
                     margin-top: 3.125rem;
@@ -335,10 +342,10 @@
                 .card-body{
                     margin-top: 1.25rem;
                     .card-title{
-                        font-size: 14px;
+                        font-size: 0.875rem;
                     }
                     .card-text{
-                        font-size: 10px;
+                        font-size: 0.625rem;
                     }
                 }
             }
@@ -346,17 +353,22 @@
     }
 }
 .bonus{
-    background: $bgprimaryColor;
-    padding: 3.125rem 6.25rem;
-    .col-sm-3{
-        .card{
-            text-align: center;
-            .card-img-top{
-                margin-top: 20px;
-            }
-                .card-text{
-                    font-size: 10px;
-                
+    margin-top: 4.375rem;
+    .row-cols-md-4{
+        background: $bgprimaryColor;
+        max-width: 100%;
+        justify-content: center;
+        padding: 3rem 0;
+        .col{
+            width: 15.625rem;
+            .card{
+                text-align: center;
+                .card-img-top{
+                    padding-top: 2.1875rem;
+                }
+                .card-body{
+                    padding-top: 0.9375rem;
+                }
             }
         }
     }
