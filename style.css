@@ -544,14 +544,16 @@
   background: #ffffff;
   box-shadow: 0px 0.0625rem 0.625rem rgba(0, 0, 0, 0.08);
 }
-.Frequently-Asked-Questions .accordion .accordion-item .accordion-header:focus {
-  border: none;
-}
 .Frequently-Asked-Questions .accordion .accordion-item .accordion-header .accordion-button {
+  background: none;
   padding-left: 4.5rem;
   border: none;
 }
+.Frequently-Asked-Questions .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
 .Frequently-Asked-Questions .accordion .accordion-item .accordion-header .accordion-button::after {
+  transform: none;
   position: absolute;
   background-image: url("data:image/svg+xml,%3Csvg height='512px' id='Layer_1' style='enable-background:new 0 0 512 512;' version='1.1' viewBox='0 0 512 512' width='512px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath d='M417.4,224H94.6C77.7,224,64,238.3,64,256c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32 C448,238.3,434.3,224,417.4,224z'/%3E%3C/svg%3E");
   left: 10px;
