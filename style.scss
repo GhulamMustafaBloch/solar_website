@@ -601,8 +601,18 @@
     & > div {
         margin: 0;
         justify-content: center;
-        .col {
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        & >div {
             max-width: 43%;
+            @media screen and (max-width:767px) {
+                max-width: 80%;
+            }
+            @media screen and (max-width:420px) {
+                max-width: 90%;
+            }
             .card {
                 min-height: 68.5rem;
                 background: $whiteColor;
@@ -737,6 +747,10 @@
             height: 4.5rem;
             right: 226px;
             top: 38px;
+            @media screen and (max-width:767px) {
+                right: 47px;
+                top: 0;
+            }
         }
         &::before {
             position: absolute;
@@ -751,7 +765,7 @@
     .accordion {
         border: none;
         .accordion-item {
-            width: 65.625rem;
+            max-width: 65.625rem;
             margin: 0.625rem auto;
             border: none;
             background: $whiteColor;
@@ -787,6 +801,9 @@
     .d-flex {
         padding: 4.25rem 0;
         position: relative;
+        @media screen and (max-width:767px) {
+            padding: 0.25rem 0;
+        }
         .btn-primary {
             background: $bgColor;
             border: none;
@@ -801,6 +818,9 @@
             height: 4.5rem;
             left: 226px;
             top: 84px;
+            @media screen and (max-width:767px) {
+                left: 16px;
+            }
         }
     }
 }
@@ -816,10 +836,17 @@
         display: flex;
         gap: 1.875rem;
         margin: 4.8125rem 0 2.5rem 0;
+        @media screen and (max-width:767px) {
+            padding: 0 1.25rem;
+        }
+        @media screen and (max-width:575px) {
+            padding: 0 1.25rem;
+            flex-direction: column;
+        }
         & > form {
             background: $whiteColor;
             border: 1px solid $formTertiaryColor;
-            width: 45.625rem;
+            max-width: 45.625rem;
             padding: 1.6875rem 1.75rem 0;
             .col-md-6 {
                 margin: 15px auto;
@@ -855,6 +882,9 @@
             padding: 16px;
             width: 350px;
             background: $whiteColor;
+            @media screen and (max-width:575px) {
+                width: auto;
+            }
             .location {
                 display: flex;
                 gap: 15px;
@@ -874,9 +904,20 @@
     padding: 0 6.25rem;
     min-height: 8.3494rem;
     align-items: center;
+    @media screen and (max-width:991px) {
+        padding: 0 2.25rem;
+    }
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+        padding: 2rem 1.25rem;
+    }
     .Newsletter-content {
         max-width: 500px;
         color: $whiteColor;
+        @media screen and (max-width:767px) {
+            flex-direction: column;
+            max-width: 100%;
+        }
         h5 {
             font-size: 24px;
         }

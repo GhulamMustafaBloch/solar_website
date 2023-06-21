@@ -714,39 +714,55 @@
   margin: 0;
   justify-content: center;
 }
-.listing-card > div .col {
+@media screen and (max-width: 767px) {
+  .listing-card > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.listing-card > div > div {
   max-width: 43%;
 }
-.listing-card > div .col .card {
+@media screen and (max-width: 767px) {
+  .listing-card > div > div {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .listing-card > div > div {
+    max-width: 90%;
+  }
+}
+.listing-card > div > div .card {
   min-height: 68.5rem;
   background: #ffffff;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
   border: none;
 }
-.listing-card > div .col .card .card-img-top img {
+.listing-card > div > div .card .card-img-top img {
   width: 100%;
 }
-.listing-card > div .col .card .card-body .card-title {
+.listing-card > div > div .card .card-body .card-title {
   color: #86be3f;
 }
-.listing-card > div .col .card .card-body .card-listing-item {
+.listing-card > div > div .card .card-body .card-listing-item {
   display: flex;
   gap: 0.4375rem;
 }
-.listing-card > div .col .card .card-body .card-listing-item p {
+.listing-card > div > div .card .card-body .card-listing-item p {
   font-size: 0.875rem;
 }
-.listing-card > div .col .card .card-body .CONSIGLIATO .card-title {
+.listing-card > div > div .card .card-body .CONSIGLIATO .card-title {
   color: #363636;
   font-size: 1.125rem;
 }
-.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families {
+.listing-card > div > div .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families {
   margin-top: 1.25rem;
   display: flex;
   gap: 3.125rem;
 }
-.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices .devices-and-families-img,
-.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families .devices-and-families-img {
+.listing-card > div > div .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices .devices-and-families-img,
+.listing-card > div > div .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families .devices-and-families-img {
   width: 3.875rem;
   height: 3.875rem;
   border-radius: 3.875rem;
@@ -755,23 +771,23 @@
   justify-content: center;
   align-items: center;
 }
-.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices p,
-.listing-card > div .col .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families p {
+.listing-card > div > div .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .devices p,
+.listing-card > div > div .card .card-body .CONSIGLIATO .CONSIGLIATO-devices-and-families .families p {
   margin-top: 0.625rem;
 }
-.listing-card > div .col .card .card-body .Scopri-listing .card-title {
+.listing-card > div > div .card .card-body .Scopri-listing .card-title {
   font-size: 1rem;
   color: #363636;
 }
-.listing-card > div .col .card .card-body .Scopri-listing .list-items {
+.listing-card > div > div .card .card-body .Scopri-listing .list-items {
   padding: 1.875rem;
 }
-.listing-card > div .col .card .card-body .Scopri-listing .list-items li {
+.listing-card > div > div .card .card-body .Scopri-listing .list-items li {
   color: #666666;
   font-size: 0.875rem;
   padding-top: 1.125rem;
 }
-.listing-card > div .col .card .card-body .Scopri-listing .list-items li::marker {
+.listing-card > div > div .card .card-body .Scopri-listing .list-items li::marker {
   color: #86be3f;
   font-size: 1.25rem;
 }
@@ -844,6 +860,12 @@
   right: 226px;
   top: 38px;
 }
+@media screen and (max-width: 767px) {
+  .Frequently-Asked-Questions .accordion-title::after {
+    right: 47px;
+    top: 0;
+  }
+}
 .Frequently-Asked-Questions .accordion-title::before {
   position: absolute;
   content: "";
@@ -857,7 +879,7 @@
   border: none;
 }
 .Frequently-Asked-Questions .accordion .accordion-item {
-  width: 65.625rem;
+  max-width: 65.625rem;
   margin: 0.625rem auto;
   border: none;
   background: #ffffff;
@@ -890,6 +912,11 @@
   padding: 4.25rem 0;
   position: relative;
 }
+@media screen and (max-width: 767px) {
+  .Frequently-Asked-Questions .d-flex {
+    padding: 0.25rem 0;
+  }
+}
 .Frequently-Asked-Questions .d-flex .btn-primary {
   background: #86be3f;
   border: none;
@@ -905,6 +932,11 @@
   left: 226px;
   top: 84px;
 }
+@media screen and (max-width: 767px) {
+  .Frequently-Asked-Questions .d-flex::before {
+    left: 16px;
+  }
+}
 
 .contact-us-container .contact-title {
   text-align: center;
@@ -918,10 +950,21 @@
   gap: 1.875rem;
   margin: 4.8125rem 0 2.5rem 0;
 }
+@media screen and (max-width: 767px) {
+  .contact-us-container .contact-us {
+    padding: 0 1.25rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact-us-container .contact-us {
+    padding: 0 1.25rem;
+    flex-direction: column;
+  }
+}
 .contact-us-container .contact-us > form {
   background: #ffffff;
   border: 1px solid #DEDEDE;
-  width: 45.625rem;
+  max-width: 45.625rem;
   padding: 1.6875rem 1.75rem 0;
 }
 .contact-us-container .contact-us > form .col-md-6 {
@@ -957,6 +1000,11 @@
   width: 350px;
   background: #ffffff;
 }
+@media screen and (max-width: 575px) {
+  .contact-us-container .contact-us .contact-info {
+    width: auto;
+  }
+}
 .contact-us-container .contact-us .contact-info .location {
   display: flex;
   gap: 15px;
@@ -975,9 +1023,26 @@
   min-height: 8.3494rem;
   align-items: center;
 }
+@media screen and (max-width: 991px) {
+  .Subscribe-for-Newsletter {
+    padding: 0 2.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Subscribe-for-Newsletter {
+    flex-direction: column;
+    padding: 2rem 1.25rem;
+  }
+}
 .Subscribe-for-Newsletter .Newsletter-content {
   max-width: 500px;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .Subscribe-for-Newsletter .Newsletter-content {
+    flex-direction: column;
+    max-width: 100%;
+  }
 }
 .Subscribe-for-Newsletter .Newsletter-content h5 {
   font-size: 24px;
