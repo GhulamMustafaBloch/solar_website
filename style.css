@@ -235,6 +235,12 @@ main .Chi-Siamo-main-container p {
   font-weight: 400;
   max-width: 69.375rem;
 }
+@media screen and (max-width: 767px) {
+  main .Chi-Siamo-main-container p {
+    padding: 0 10px;
+    text-align: justify;
+  }
+}
 main .Chi-Siamo-main-container .Chi-Siamo-container {
   margin-top: 3rem;
   position: relative;
@@ -294,9 +300,9 @@ main .Chi-Siamo-main-container .sviluppiamo {
   max-width: 48.125rem;
   position: relative;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   main .Chi-Siamo-main-container .sviluppiamo {
-    padding: 0 12px;
+    padding: 0 44px;
   }
 }
 main .Chi-Siamo-main-container .sviluppiamo::before {
@@ -342,6 +348,11 @@ main .Chi-Siamo-main-container .Cristian {
   margin-top: 1.875rem;
   color: #86be3f;
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  main .Chi-Siamo-main-container .Cristian {
+    text-align: center;
+  }
 }
 main .Chi-Siamo-main-container .Cristian::before {
   content: "";
@@ -1020,12 +1031,21 @@ main .contact-us-container .contact-us > form .col-md-6 {
 main .contact-us-container .contact-us > form .col-md-6 .form-control {
   border: 1px solid #DEDEDE;
 }
+main .contact-us-container .contact-us > form .col-md-6 .form-control:focus {
+  box-shadow: none;
+}
 main .contact-us-container .contact-us > form .col-md-12 {
   margin: 0 auto 15px;
   border-radius: 0.3125rem;
 }
 main .contact-us-container .contact-us > form .col-md-12 .form-control {
   border: 1px solid #DEDEDE;
+}
+main .contact-us-container .contact-us > form .col-md-12 .form-control:focus {
+  box-shadow: none;
+}
+main .contact-us-container .contact-us > form .col-md-12 textarea {
+  resize: none;
 }
 main .contact-us-container .contact-us > form .d-flex {
   display: flex;

@@ -186,6 +186,10 @@ main {
             text-align: center;
             font-weight: $regular;
             max-width: 69.375rem;
+            @media screen and (max-width:767px) {
+                padding: 0 10px;
+                text-align: justify;
+            }
         }
         .Chi-Siamo-container {
             margin-top: 3rem;
@@ -243,8 +247,8 @@ main {
             font-size: 1.3125rem;
             max-width: 48.125rem;
             position: relative;
-            @media screen and (max-width: 767px) {
-                padding: 0 12px;
+            @media screen and (max-width: 991px) {
+                padding: 0 44px;
             }
             &::before {
                 content: "";
@@ -282,6 +286,9 @@ main {
             margin-top: 1.875rem;
             color: $bgColor;
             position: relative;
+            @media screen and (max-width:767px) {
+                text-align: center;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -895,6 +902,9 @@ main {
                     height: 2.5rem;
                     .form-control {
                         border: 1px solid $formTertiaryColor;
+                        &:focus{
+                            box-shadow: none;
+                        }
                     }
                 }
                 .col-md-12 {
@@ -902,6 +912,12 @@ main {
                     border-radius: 0.3125rem;
                     .form-control {
                         border: 1px solid $formTertiaryColor;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                    textarea{
+                        resize: none;
                     }
                 }
 
