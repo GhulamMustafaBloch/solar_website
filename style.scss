@@ -51,7 +51,9 @@
             @media screen and (max-width: 420px) {
                 gap: 0.5rem;
             }
-            & > span {
+            & > a {
+                color: $navTextColor;
+                text-decoration: none;
                 font-size: 1rem;
                 @media screen and (max-width: 767px) {
                     font-size: 14px;
@@ -61,12 +63,14 @@
                 }
             }
         }
-        button {
+        button {    
+            width: 8.0625rem;
+            height: 2.5625rem;
             background: $bgColor;
             border: none;
             color: $whiteColor;
             @media screen and (max-width: 767px) {
-                font-size: 14px;
+                font-size: 0.875rem;
             }
             @media screen and (max-width: 575px) {
                 font-size: 10px;
@@ -106,16 +110,16 @@ main {
         li {
             a {
                 text-decoration: none;
-                color: $blackColor;
-                font-size: 18px;
+                color: $navTextColor;
+                font-size: 1.125rem;
                 @media screen and (max-width: 991px) {
-                    font-size: 14px;
+                    font-size: 0.875rem;
                 }
                 @media screen and (max-width: 767px) {
-                    font-size: 14px;
+                    font-size: 0.875rem;
                 }
                 @media screen and (max-width: 575px) {
-                    font-size: 10px;
+                    font-size: 0.625rem;
                 }
             }
         }
@@ -126,6 +130,8 @@ main {
         align-items: center;
         height: 43.75rem;
         background-image: url("./banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         @media screen and (max-width: 575px) {
             height: 25.75rem;
         }
@@ -138,7 +144,7 @@ main {
                 color: $whiteColor;
                 @media screen and (max-width: 575px) {
                     font-size: 2.5rem;
-                    padding: 5px;
+                    padding: 0.3125rem;
                 }
                 @media screen and (max-width: 420px) {
                     font-size: 2rem;
@@ -182,12 +188,12 @@ main {
         p {
             max-width: 63.375rem;
             margin: 2.8125rem auto;
-            font-size: 17px;
+            font-size: 1.0625rem;
             text-align: center;
             font-weight: $regular;
             max-width: 69.375rem;
             @media screen and (max-width:767px) {
-                padding: 0 10px;
+                padding: 0 0.625rem;
                 text-align: justify;
             }
         }
@@ -324,6 +330,7 @@ main {
         }
     }
     .Smart-Integrated-container {
+        justify-content: center;
         display: flex;
         gap: 153px;
         padding: 0 5.4375rem;
@@ -386,10 +393,10 @@ main {
                 }
             }
             h3 {
-                font-size: 30px;
+                font-size: 1.875rem;
                 color: $bgColor;
                 @media screen and (max-width: 991px) {
-                    font-size: 36px;
+                    font-size: 2.25rem;
                 }
                 &::before {
                     position: absolute;
@@ -405,31 +412,32 @@ main {
                 }
             }
             p {
-                font-size: 17px;
+                font-size: 1.0625rem;
                 padding-top: 3rem;
                 @media screen and (max-width: 991px) {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     padding-top: 1rem;
                 }
             }
         }
         .Smart-Integrated-img {
+            position: relative;
             .Smart-Integrated {
                 img {
                     @media screen and (max-width: 575px) {
-                        width: 250px;
+                        width: 15.625rem;
                     }
                     @media screen and (max-width: 420px) {
-                        width: 230px;
+                        width: 14.375rem;
                     }
                 }
             }
             .solar {
+                top: 250px;
+                right: -144px;
                 position: absolute;
-                left: 255px;
-                bottom: -115px;
                 @media screen and (max-width: 1199px) {
-                    left: 191px;
+                        left: 153px;
                 }
                 @media screen and (max-width: 991px) {
                     top: 260px;
@@ -468,7 +476,7 @@ main {
                 border: 2.5rem solid $borderPrimaryColor;
                 border-radius: 50%;
                 z-index: -1;
-                left: 164px;
+                right: -81px;
                 top: 55px;
                 @media screen and (max-width: 1199px) {
                     left: 75px;
@@ -485,7 +493,7 @@ main {
                 height: 5.9588rem;
                 top: -18px;
                 z-index: -1;
-                left: 72px;
+                left: -28px;
                 @media screen and (max-width: 1199px) {
                     left: 16px;
                 }
@@ -597,6 +605,7 @@ main {
                             font-size: 1.5rem;
                         }
                         .card-text {
+                            padding: 15px;
                             font-size: 1rem;
                         }
                     }
@@ -661,11 +670,11 @@ main {
                     max-width: 90%;
                 }
                 .card {
-                    min-height: 61.5rem;
+                    height: 100%;
                     background: $whiteColor;
                     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
                     border: none;
-                    margin-top: 12px;
+                    margin-top: 0.75rem;
                     .card-img-top {
                         img {
                             width: 100%;
@@ -776,7 +785,8 @@ main {
             .btn-primary {
                 background: $bgColor;
                 border: none;
-                width: 171px;
+                width: 10.6875rem;
+                height: 2.8125rem;
             }
         }
     }
@@ -857,6 +867,7 @@ main {
                 border: none;
                 width: 10.6875rem;
                 margin: 0 auto;
+                height: 2.8125rem;
             }
             &::before {
                 position: absolute;
@@ -882,6 +893,7 @@ main {
         .contact-us {
             padding: 0 6.25rem;
             display: flex;
+            justify-content: center;
             gap: 1.875rem;
             margin: 4.8125rem 0 2.5rem 0;
             @media screen and (max-width: 767px) {
@@ -935,6 +947,7 @@ main {
                 }
             }
             .contact-info {
+                color: $secondaryColor;
                 border: 1px solid $formTertiaryColor;
                 padding: 16px;
                 width: 350px;
@@ -946,6 +959,11 @@ main {
                     display: flex;
                     gap: 15px;
                     margin: 34px 0;
+                    color: $secondaryColor;
+                    a{
+                        text-decoration: none;
+                        color: $secondaryColor;
+                    }
                 }
                 .boder-bottom {
                     border-bottom: 1px solid #000;
@@ -1066,6 +1084,10 @@ main {
                     display: flex;
                     gap: 15px;
                     margin-top: 1.5rem;
+                    a{
+                        text-decoration: none;
+                        color: $whiteColor;
+                    }
                 }
             }
             .footer-Useful-Links {

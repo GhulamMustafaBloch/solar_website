@@ -67,27 +67,31 @@
     gap: 0.5rem;
   }
 }
-.header .header-content-and-btn .info > span {
+.header .header-content-and-btn .info > a {
+  color: #8A8888;
+  text-decoration: none;
   font-size: 1rem;
 }
 @media screen and (max-width: 767px) {
-  .header .header-content-and-btn .info > span {
+  .header .header-content-and-btn .info > a {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 575px) {
-  .header .header-content-and-btn .info > span {
+  .header .header-content-and-btn .info > a {
     font-size: 10px;
   }
 }
 .header .header-content-and-btn button {
+  width: 8.0625rem;
+  height: 2.5625rem;
   background: #86be3f;
   border: none;
   color: #ffffff;
 }
 @media screen and (max-width: 767px) {
   .header .header-content-and-btn button {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 575px) {
@@ -137,22 +141,22 @@ main .nav-links {
 }
 main .nav-links li a {
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  color: #8A8888;
+  font-size: 1.125rem;
 }
 @media screen and (max-width: 991px) {
   main .nav-links li a {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 767px) {
   main .nav-links li a {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 575px) {
   main .nav-links li a {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 }
 main .banner {
@@ -161,6 +165,8 @@ main .banner {
   align-items: center;
   height: 43.75rem;
   background-image: url("./banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (max-width: 575px) {
   main .banner {
@@ -179,7 +185,7 @@ main .banner .banner-content h1 {
 @media screen and (max-width: 575px) {
   main .banner .banner-content h1 {
     font-size: 2.5rem;
-    padding: 5px;
+    padding: 0.3125rem;
   }
 }
 @media screen and (max-width: 420px) {
@@ -230,14 +236,14 @@ main .Chi-Siamo-main-container h2 {
 main .Chi-Siamo-main-container p {
   max-width: 63.375rem;
   margin: 2.8125rem auto;
-  font-size: 17px;
+  font-size: 1.0625rem;
   text-align: center;
   font-weight: 400;
   max-width: 69.375rem;
 }
 @media screen and (max-width: 767px) {
   main .Chi-Siamo-main-container p {
-    padding: 0 10px;
+    padding: 0 0.625rem;
     text-align: justify;
   }
 }
@@ -395,6 +401,7 @@ main .Chi-Siamo-main-container .Cristian::after {
   }
 }
 main .Smart-Integrated-container {
+  justify-content: center;
   display: flex;
   gap: 153px;
   padding: 0 5.4375rem;
@@ -479,12 +486,12 @@ main .Smart-Integrated-container .Smart-Integrated-content h2::after {
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-content h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #86be3f;
 }
 @media screen and (max-width: 991px) {
   main .Smart-Integrated-container .Smart-Integrated-content h3 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-content h3::before {
@@ -502,33 +509,36 @@ main .Smart-Integrated-container .Smart-Integrated-content h3::before {
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-content p {
-  font-size: 17px;
+  font-size: 1.0625rem;
   padding-top: 3rem;
 }
 @media screen and (max-width: 991px) {
   main .Smart-Integrated-container .Smart-Integrated-content p {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-top: 1rem;
   }
 }
+main .Smart-Integrated-container .Smart-Integrated-img {
+  position: relative;
+}
 @media screen and (max-width: 575px) {
   main .Smart-Integrated-container .Smart-Integrated-img .Smart-Integrated img {
-    width: 250px;
+    width: 15.625rem;
   }
 }
 @media screen and (max-width: 420px) {
   main .Smart-Integrated-container .Smart-Integrated-img .Smart-Integrated img {
-    width: 230px;
+    width: 14.375rem;
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-img .solar {
+  top: 250px;
+  right: -144px;
   position: absolute;
-  left: 255px;
-  bottom: -115px;
 }
 @media screen and (max-width: 1199px) {
   main .Smart-Integrated-container .Smart-Integrated-img .solar {
-    left: 191px;
+    left: 153px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -575,7 +585,7 @@ main .Smart-Integrated-container .Smart-Integrated-img::before {
   border: 2.5rem solid #F8F8F8;
   border-radius: 50%;
   z-index: -1;
-  left: 164px;
+  right: -81px;
   top: 55px;
 }
 @media screen and (max-width: 1199px) {
@@ -596,7 +606,7 @@ main .Smart-Integrated-container .Smart-Integrated-img::after {
   height: 5.9588rem;
   top: -18px;
   z-index: -1;
-  left: 72px;
+  left: -28px;
 }
 @media screen and (max-width: 1199px) {
   main .Smart-Integrated-container .Smart-Integrated-img::after {
@@ -722,6 +732,7 @@ main .Perchè-container .row .col-sm-3 .card .card-body .card-title {
   font-size: 1.5rem;
 }
 main .Perchè-container .row .col-sm-3 .card .card-body .card-text {
+  padding: 15px;
   font-size: 1rem;
 }
 main .bonus {
@@ -792,11 +803,11 @@ main .listing-card > div > div {
   }
 }
 main .listing-card > div > div .card {
-  min-height: 61.5rem;
+  height: 100%;
   background: #ffffff;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
   border: none;
-  margin-top: 12px;
+  margin-top: 0.75rem;
 }
 main .listing-card > div > div .card .card-img-top img {
   width: 100%;
@@ -897,7 +908,8 @@ main .Connettiti .d-flex {
 main .Connettiti .d-flex .btn-primary {
   background: #86be3f;
   border: none;
-  width: 171px;
+  width: 10.6875rem;
+  height: 2.8125rem;
 }
 main .Frequently-Asked-Questions {
   padding-bottom: 2.5rem;
@@ -979,6 +991,7 @@ main .Frequently-Asked-Questions .d-flex .btn-primary {
   border: none;
   width: 10.6875rem;
   margin: 0 auto;
+  height: 2.8125rem;
 }
 main .Frequently-Asked-Questions .d-flex::before {
   position: absolute;
@@ -1003,6 +1016,7 @@ main .contact-us-container .contact-title {
 main .contact-us-container .contact-us {
   padding: 0 6.25rem;
   display: flex;
+  justify-content: center;
   gap: 1.875rem;
   margin: 4.8125rem 0 2.5rem 0;
 }
@@ -1060,6 +1074,7 @@ main .contact-us-container .contact-us > form .d-flex .btn-primary {
   height: 40px;
 }
 main .contact-us-container .contact-us .contact-info {
+  color: #666666;
   border: 1px solid #DEDEDE;
   padding: 16px;
   width: 350px;
@@ -1074,6 +1089,11 @@ main .contact-us-container .contact-us .contact-info .location {
   display: flex;
   gap: 15px;
   margin: 34px 0;
+  color: #666666;
+}
+main .contact-us-container .contact-us .contact-info .location a {
+  text-decoration: none;
+  color: #666666;
 }
 main .contact-us-container .contact-us .contact-info .boder-bottom {
   border-bottom: 1px solid #000;
@@ -1202,6 +1222,10 @@ main .footer .footer-container .footer-contact .location {
   display: flex;
   gap: 15px;
   margin-top: 1.5rem;
+}
+main .footer .footer-container .footer-contact .location a {
+  text-decoration: none;
+  color: #ffffff;
 }
 main .footer .footer-container .footer-Useful-Links li:nth-child(5) {
   margin-top: 3rem;
