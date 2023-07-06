@@ -6,16 +6,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-header .header-content-and-btn.show {
-  left: 0;
+body.main.overflow {
+  overflow: hidden;
 }
 
 .header {
   width: 100%;
-  height: 5rem;
+  height: 6.25rem;
   background-color: rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 10.3125rem;
   min-height: 5rem;
@@ -32,15 +31,14 @@ header .header-content-and-btn.show {
     padding: 0 3.3125rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .header {
-    gap: 2rem;
+    gap: 12px;
   }
 }
 @media screen and (max-width: 575px) {
   .header {
-    padding: 2rem 0.5rem;
-    gap: 1rem;
+    padding: 0 1rem;
   }
 }
 .header .logo img {
@@ -55,21 +53,29 @@ header .header-content-and-btn.show {
 @media screen and (max-width: 767px) {
   .header .header-content-and-btn {
     position: fixed;
-    width: 100%;
-    height: 100vh;
+    width: 50%;
+    height: 600px;
     background: #363636;
-    top: 80px;
-    left: -100%;
+    top: 0;
+    right: -100%;
     transition: all 1s;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
     z-index: 1;
-    gap: 3rem;
+    gap: 1.5rem;
+    padding: 20px 0 0 30px;
   }
+}
+@media screen and (max-width: 575px) {
+  .header .header-content-and-btn {
+    width: 70%;
+  }
+}
+.header .header-content-and-btn.show {
+  right: 0;
 }
 .header .header-content-and-btn .info {
   display: flex;
-  align-items: center;
   gap: 1.25rem;
 }
 @media screen and (max-width: 420px) {
@@ -82,16 +88,18 @@ header .header-content-and-btn.show {
   text-decoration: none;
   font-size: 1rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .header .header-content-and-btn .info > a {
     font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .header-content-and-btn .info > a {
     color: #ffffff;
   }
 }
-@media screen and (max-width: 575px) {
-  .header .header-content-and-btn .info > a {
-    font-size: 0.625rem;
-  }
+.header .header-content-and-btn .phone {
+  gap: 1.8rem;
 }
 .header .header-content-and-btn button {
   width: 8.0625rem;
@@ -129,7 +137,7 @@ header .header-content-and-btn.show {
   }
 }
 
-main .nav-links {
+.nav-links {
   display: flex;
   justify-content: space-between;
   padding: 0 10.3125rem;
@@ -138,58 +146,71 @@ main .nav-links {
   list-style: none;
 }
 @media screen and (max-width: 1199px) {
-  main .nav-links {
+  .nav-links {
     padding: 0 5.3125rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  main .nav-links {
+  .nav-links {
     padding: 0 3.3125rem;
   }
 }
 @media screen and (max-width: 767px) {
-  main .nav-links {
+  .nav-links {
+    display: none;
     margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.3125rem;
-  }
-}
-@media screen and (max-width: 575px) {
-  main .nav-links {
+    padding: 0;
     margin: 0;
   }
 }
 @media screen and (max-width: 575px) {
-  main .nav-links {
+  .nav-links {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .nav-links {
     gap: 1rem;
   }
 }
-main .nav-links li a {
+@media screen and (max-width: 767px) {
+  .nav-links li {
+    margin-top: 1.5rem;
+  }
+}
+.nav-links li a {
   text-decoration: none;
   color: #8A8888;
   font-size: 1.125rem;
 }
-main .nav-links li a:hover {
+.nav-links li a:hover {
   color: #86be3f;
 }
 @media screen and (max-width: 991px) {
-  main .nav-links li a {
+  .nav-links li a {
     font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 767px) {
-  main .nav-links li a {
+  .nav-links li a {
     font-size: 0.875rem;
+    color: #ffffff;
   }
 }
 @media screen and (max-width: 575px) {
-  main .nav-links li a {
+  .nav-links li a {
     font-size: 0.625rem;
   }
 }
-main .nav-links .active a {
+.nav-links .active a {
   color: #86be3f;
+}
+
+main {
+  overflow: hidden;
 }
 main .banner {
   display: flex;
@@ -308,7 +329,11 @@ main .Chi-Siamo-main-container .Chi-Siamo-cards {
   display: flex;
   justify-content: center;
   gap: 1.875rem;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 991px) {
+  main .Chi-Siamo-main-container .Chi-Siamo-cards {
+    flex-wrap: wrap;
+  }
 }
 main .Chi-Siamo-main-container .Chi-Siamo-cards .Siamo-card {
   margin-top: 5rem;
@@ -484,6 +509,8 @@ main .Smart-Integrated-container .Smart-Integrated-content::before {
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-content h2 {
+  margin-bottom: 0;
+  margin-top: 20px;
   font-size: 2.125rem;
 }
 @media screen and (max-width: 991px) {
@@ -491,9 +518,19 @@ main .Smart-Integrated-container .Smart-Integrated-content h2 {
     font-size: 2.375rem;
   }
 }
+@media screen and (max-width: 767px) {
+  main .Smart-Integrated-container .Smart-Integrated-content h2 {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 575px) {
   main .Smart-Integrated-container .Smart-Integrated-content h2 {
-    font-size: 1.375rem;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .Smart-Integrated-container .Smart-Integrated-content h2 {
+    font-size: 1rem;
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-content h2::after {
@@ -519,6 +556,11 @@ main .Smart-Integrated-container .Smart-Integrated-content h3 {
     font-size: 2.25rem;
   }
 }
+@media screen and (max-width: 420px) {
+  main .Smart-Integrated-container .Smart-Integrated-content h3 {
+    font-size: 2rem;
+  }
+}
 main .Smart-Integrated-container .Smart-Integrated-content h3::before {
   position: absolute;
   content: "";
@@ -541,6 +583,16 @@ main .Smart-Integrated-container .Smart-Integrated-content p {
   main .Smart-Integrated-container .Smart-Integrated-content p {
     font-size: 1.25rem;
     padding-top: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  main .Smart-Integrated-container .Smart-Integrated-content p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .Smart-Integrated-container .Smart-Integrated-content p {
+    font-size: 0.8rem;
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-img {
@@ -584,7 +636,7 @@ main .Smart-Integrated-container .Smart-Integrated-img .solar {
 }
 @media screen and (max-width: 375px) {
   main .Smart-Integrated-container .Smart-Integrated-img .solar {
-    left: 0;
+    left: 70px;
   }
 }
 main .Smart-Integrated-container .Smart-Integrated-img .solar::before {
@@ -694,6 +746,11 @@ main .Connesso-Intelligente-container .listing-wrapper {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 420px) {
+  main .Connesso-Intelligente-container .listing-wrapper {
+    gap: 0;
+  }
+}
 main .Connesso-Intelligente-container .listing-wrapper .list-item {
   margin-top: 1.25rem;
   display: flex;
@@ -793,6 +850,11 @@ main .bonus .row-cols-md-4 {
 }
 main .bonus .row-cols-md-4 .col {
   width: 15.625rem;
+}
+@media screen and (max-width: 575px) {
+  main .bonus .row-cols-md-4 .col {
+    width: 100%;
+  }
 }
 main .bonus .row-cols-md-4 .col .card {
   text-align: center;
@@ -982,7 +1044,7 @@ main .Frequently-Asked-Questions {
   }
 }
 main .Frequently-Asked-Questions .accordion-title {
-  padding: 5rem 0;
+  padding: 4rem 0 2rem;
   text-align: center;
   position: relative;
 }
@@ -1006,7 +1068,7 @@ main .Frequently-Asked-Questions .accordion-title::before {
   width: 6.25rem;
   height: 0.1875rem;
   background: #86be3f;
-  bottom: 60px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1118,6 +1180,11 @@ main .contact-us-container .contact-us > form {
     max-width: 22.625rem;
   }
 }
+@media screen and (max-width: 575px) {
+  main .contact-us-container .contact-us > form {
+    max-width: 100%;
+  }
+}
 main .contact-us-container .contact-us > form .col-xl-6 {
   margin: 0.9375rem auto;
   border-radius: 0.3125rem;
@@ -1171,6 +1238,11 @@ main .contact-us-container .contact-us .contact-info .location {
   gap: 15px;
   padding: 0.4375rem 0;
   color: #666666;
+}
+@media screen and (max-width: 767px) {
+  main .contact-us-container .contact-us .contact-info .location {
+    padding: 0.4375rem 1rem;
+  }
 }
 main .contact-us-container .contact-us .contact-info .location a {
   text-decoration: none;
@@ -1271,8 +1343,12 @@ main .footer .footer-container {
   padding: 3.125rem 0;
   border-bottom: 1px solid #C9C9C9;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+}
+@media screen and (max-width: 1199px) {
+  main .footer .footer-container {
+    flex-wrap: wrap;
+  }
 }
 main .footer .footer-container .footer-logo {
   max-width: 17.125rem;

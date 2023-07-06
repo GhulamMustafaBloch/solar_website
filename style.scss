@@ -5,15 +5,14 @@
     padding: 0;
     font-family: $poppinsFont;
 }
-header .header-content-and-btn.show{
-    left: 0;
+body.main.overflow{
+    overflow: hidden;
 }
 .header {
     width: 100%;
-    height: 5rem;
+    height: 6.25rem;
     background-color:rgba(0, 0, 0, 0.08);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10.3125rem;
     min-height: 5rem;
@@ -25,14 +24,11 @@ header .header-content-and-btn.show{
     @media screen and (max-width: 1024px) {
         padding: 0 3.3125rem;
     }
-    @media screen and (max-width: 767px) {
-        // justify-content: center;
-        // padding: 0 1.3125rem;
-        gap: 2rem;
+    @media screen and (max-width: 991px) {
+        gap: 12px;
     }
     @media screen and (max-width: 575px) {
-        padding: 2rem 0.5rem;
-        gap: 1rem;
+        padding: 0 1rem;
     }
     .logo {
         img {
@@ -46,20 +42,27 @@ header .header-content-and-btn.show{
         gap: 2.5rem;
         @media screen and (max-width: 767px) {
             position: fixed;
-            width: 100%;
-            height: 100vh;
+            width: 50%;
+            height: 600px;
             background: $primaryColor;
-            top: 80px;
-            left: -100%;
+            top: 0;
+            right: -100%;
             transition: all 1s;
             flex-direction: column;
-            justify-content: center;
+            align-items: flex-start;
             z-index: 1;
-            gap: 3rem;
+            gap: 1.5rem;
+            padding:20px 0 0 30px;
+        }
+        @media screen and (max-width: 575px) {
+            width: 70%;
+        }
+        &.show{
+            right: 0;
         }
         .info {
             display: flex;
-            align-items: center;
+            // align-items: center;
             gap: 1.25rem;
             @media screen and (max-width: 420px) {
                 gap: 0.5rem;
@@ -68,14 +71,16 @@ header .header-content-and-btn.show{
                 color: $navTextColor;
                 text-decoration: none;
                 font-size: 1rem;
-                @media screen and (max-width: 767px) {
+                @media screen and (max-width: 991px) {
                     font-size: 0.875rem;
+                }
+                @media screen and (max-width: 767px) {
                     color: $whiteColor;
                 }
-                @media screen and (max-width: 575px) {
-                    font-size: 0.625rem;
-                }
             }
+        }
+        .phone{
+            gap: 1.8rem;
         }
         button {    
             width: 8.0625rem;
@@ -108,7 +113,6 @@ header .header-content-and-btn.show{
         }
     }
     }
-main {
     .nav-links {
         display: flex;
         justify-content: space-between;
@@ -123,10 +127,13 @@ main {
             padding: 0 3.3125rem;
         }
         @media screen and (max-width: 767px) {
+            display: none;
             margin-top: 2rem;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.3125rem;
+            padding: 0;
+            margin: 0;
         }
         @media screen and (max-width: 575px) {
             margin: 0;
@@ -135,6 +142,9 @@ main {
             gap: 1rem;
         }
         li {
+            @media screen and (max-width: 767px) {
+                margin-top: 1.5rem;
+            }
             a {
                 text-decoration: none;
                 color: $navTextColor;
@@ -147,6 +157,7 @@ main {
                 }
                 @media screen and (max-width: 767px) {
                     font-size: 0.875rem;
+                    color: $whiteColor;
                 }
                 @media screen and (max-width: 575px) {
                     font-size: 0.625rem;
@@ -159,6 +170,8 @@ main {
             }
         }
     }
+main {
+    overflow: hidden;
     .banner {
         display: flex;
         justify-content: center;
@@ -259,7 +272,9 @@ main {
             display: flex;
             justify-content: center;
             gap: 1.875rem;
-            flex-wrap: wrap;
+                @media screen and (max-width: 991px) {
+                    flex-wrap: wrap;
+                }
             .Siamo-card {
                 margin-top: 5rem;
                 position: relative;
@@ -403,12 +418,20 @@ main {
                 }
             }
             h2 {
+                margin-bottom: 0;
+                margin-top: 20px;
                 font-size: 2.125rem;
                 @media screen and (max-width: 991px) {
                     font-size: 2.375rem;
                 }
+                @media screen and (max-width: 767px) {
+                    font-size: 1.5rem;
+                }
                 @media screen and (max-width: 575px) {
-                    font-size: 1.375rem;
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 420px) {
+                    font-size: 1rem;
                 }
                 &::after {
                     position: absolute;
@@ -429,6 +452,9 @@ main {
                 @media screen and (max-width: 991px) {
                     font-size: 2.25rem;
                 }
+                @media screen and (max-width: 420px) {
+                    font-size: 2rem;
+                }
                 &::before {
                     position: absolute;
                     content: "";
@@ -448,6 +474,12 @@ main {
                 @media screen and (max-width: 991px) {
                     font-size: 1.25rem;
                     padding-top: 1rem;
+                }
+                @media screen and (max-width: 575px) {
+                    font-size: 1rem;
+                }
+                @media screen and (max-width: 420px) {
+                    font-size: 0.8rem;
                 }
             }
         }
@@ -481,7 +513,7 @@ main {
                     left: 100px;
                 }
                 @media screen and (max-width: 375px) {
-                    left: 0;
+                    left: 70px;
                 }
                 &::before {
                     position: absolute;
@@ -572,6 +604,9 @@ main {
             gap: 2.5rem;
             @media screen and (max-width: 767px) {
                 flex-direction: column;
+            }
+            @media screen and (max-width: 420px) {
+                gap: 0;
             }
             .list-item {
                 margin-top: 1.25rem;
@@ -667,6 +702,9 @@ main {
             padding: 3rem 0;
             .col {
                 width: 15.625rem;
+                @media screen and (max-width: 575px) {
+                    width: 100%;
+                }
                 .card {
                     text-align: center;
                     min-height: 9.1875rem;
@@ -852,7 +890,7 @@ main {
             margin: 0 1rem;
         }
         .accordion-title {
-            padding: 5rem 0;
+            padding: 4rem 0 2rem;
             text-align: center;
             position: relative;
             &::after {
@@ -873,7 +911,7 @@ main {
                 width: 6.25rem;
                 height: 0.1875rem;
                 background: $bgColor;
-                bottom: 60px;
+                bottom: 15px;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -975,6 +1013,9 @@ main {
                 @media screen and (max-width: 767px) {
                     max-width: 22.625rem;
                 }
+                @media screen and (max-width: 575px) {
+                    max-width: 100%;
+                }
                 .col-xl-6 {
                     margin: 0.9375rem auto;
                     border-radius: 0.3125rem;
@@ -1027,6 +1068,9 @@ main {
                     gap: 15px;
                     padding: 0.4375rem 0;
                     color: $secondaryColor;
+                    @media screen and (max-width:767px) {
+                        padding: 0.4375rem 1rem;
+                    }
                     a{
                         text-decoration: none;
                         color: $secondaryColor;
@@ -1119,7 +1163,9 @@ main {
             padding: 3.125rem 0;
             border-bottom: 1px solid $bordersecondaryColor;
             display: flex;
-            flex-wrap: wrap;
+            @media screen and (max-width:1199px) {
+                flex-wrap: wrap;
+            }
             justify-content: space-between;
             .footer-logo {
                 max-width: 17.125rem;
